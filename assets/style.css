@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+   border: 1px solid #1779ba;
+   color: #1779ba;
+   font-weight: 700;
+   width: 100%;
+   text-align: center;
+   padding: .85em 1em;
+   margin: 0 .4rem;
+   border-radius: .4rem;
+   cursor: pointer;
+}
+.inp_style {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #677073;
+    background: none;
+    padding: 1rem 0.5rem 0.5rem;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+.label_focus{
+   position: absolute;
+   font-size: 13px;
+   top: 10px!important
+}
+.error_style {
+   border-color: #c71414;
+   border-width: 2px;
+}
+
+body {
+    background-image: url(img/bg-barilla.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+   max-width: 920px;
+   margin: 0 auto;
+   font-family: 'Poppins', sans-serif;
+}
+.content {
+   margin: 1rem;
+   border-radius: .7em;
+   border: 2px solid #fff;
+   overflow: hidden;
+   background: rgba(255, 255, 255, 0.7);
+}
+.headerline {
+   background: #F01A18;
+   padding: .4rem 0;
+}
+
+.headerline h1 {
+   font-family: 'Baloo Bhai', cursive;
+   color: #fff;
+   font-size: 1.7rem;
+   line-height: 2rem;
+   max-width: 60%;
+   margin: auto;
+   margin-bottom: .5rem;
+   text-align: center;
+   font-style: italic;
+}
+
+
+.prize {
+   height: 300px;
+   width: 84%;
+   margin: 0 auto;
+   padding: 2rem 0 .4rem  0;
+   position: relative;
+}
+.prize img {
+   display: block;
+   margin: auto;
+   margin-top: 180px;
+   width: 30%;
+   animation-name: scale_image;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+.form {
+   width: 84%;
+   margin: 0 auto;
+}
+
+.form h2 {
+   font-size: 1.5em;
+   color: #363636;
+   text-align: center;
+   font-weight: 400;
+   padding: .4rem 0;
+   letter-spacing: 1px;
+   margin-bottom: .5rem;
+}
+
+.gender_status {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+}
+.gender_status input{
+   display: none;
+}
+
+.gender_status label{
+   font-size: .9rem;
+}
+.gender_status label:hover{
+   color: darkblue;
+   border: 1px solid darkblue;
+   transition: .3s;
+}
+
+.gender_status input:checked + label{
+   background-color: rgba(23,121,186,.75);
+   color: #fff;
+}
+
+.form_input_wrap .form_name_wrap {
+   display: flex;
+   justify-content: space-between;
+}
+.form_input_wrap .form_name {
+   width: 49%;
+}
+.form_input_wrap .inp_wrap {
+   position: relative;
+   padding: 10px;
+}
+
+.form_input_wrap .form_label {
+   position: absolute;
+   left: 1rem;
+   top: 1.8rem;
+   color: #4e4e4e;
+   transition: .2s;
+}
+.form_input_wrap .form_input {
+   display: block;
+   color: #fff;
+}
+
+.form_input_wrap .form_input::placeholder {font-size: 12px;}
+
+.form_input_wrap .form_input:focus {outline:none;}
+
+
+
+.form_option_wrap p {
+   font-size: 0.9rem;
+   font-weight: 700;
+   color: #4e4e4e;
+   padding: 5px 15px;
+   margin-top: 10px;
+}
+.form_option {
+   display: flex;
+   justify-content: space-between;
+}
+.select_wrap {
+   width: 32%;
+   padding: 0 10px;
+}
+.select_wrap select {
+   outline: none;
+   width: 100%;
+   color: #4e4e4e;
+}
+
+.error {
+   position: absolute;
+   top: -20px;
+   left: 20px;
+   font-size: 13px;
+   color: #c71414;
+   display: none;
+}
+.inp_wrap .error {
+   top: 55px;
+   left: 10px;
+}
+
+
+.main_btn {
+   text-transform: uppercase;
+   font-weight: 700;
+   background: #F01A18;
+   color: #fff;
+   border: none;
+   font-size: 1.25rem;
+   border-radius: .4rem;
+   margin: 1.5rem 0;
+   padding: .85em 1em;
+   transition: .5s;
+   animation-name: blinker;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.main_btn:focus {outline:none;}
+.main_btn:hover {background: #012A56;}
+
+@keyframes scale_image {
+   from {
+      width: 30%;
+      margin-top: 180px;
+   }
+   to {
+      width: 100%;
+      margin-top: 0;
+   }
+}
+
+@keyframes blinker {
+   0% {
+       color: #fff;
+   }
+
+   50% {
+       color: transparent;
+   }
+   100% {
+       color: #fff;
+   }
+}
+
+
+
+  
+
+
